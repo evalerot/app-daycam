@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    tools:context=".Presentacion.Menu">
+
+    <TableRow
+        android:id="@+id/rowCliente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/textCliente"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Clientes"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/btnCliente"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="3"
+            android:background="@color/colorAccent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/cliente" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowFacturar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/textFacturar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Facturar"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/btnFacturar"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/imprimir"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowCompras"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/textCompras"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Compras"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/btnCompras"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="3"
+            android:background="@color/colorAccent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/compras" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowInventarios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/textInventarios"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:text="Inventarios"
+                android:textSize="25sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <Spinner
+                android:id="@+id/seleccion"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:fontFamily="serif-monospace"
+                android:spinnerMode="dialog"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnInventarios"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/inventarios"/>
+    </TableRow>
+</TableLayout>

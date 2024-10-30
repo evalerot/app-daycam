@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".Presentacion.AjustesPublicos">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:text="IP" />
+
+    <Spinner
+        android:id="@+id/ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:prompt="@string/prompip" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:text="Base de Datos" />
+
+    <Button
+        android:id="@+id/papeleria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PapeleriaPaR"/>
+
+    <Button
+        android:id="@+id/libreria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Libreria"/>
+
+    <Button
+        android:id="@+id/fragancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragancia"/>
+
+    <Button
+        android:id="@+id/restaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restaurante"/>
+</LinearLayout>

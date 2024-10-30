@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DayC@m App</string>
+    <string name="prompbodega">Seleccione la bodega</string>
+    <string name="prompcliente">Seleccione el cliente</string>
+    <string name="prompvendedor">Seleccione el vendedor</string>
+    <string name="promppago">Seleccione el tipo de pago</string>
+    <string name="prompip">Seleccione la ip</string>
+</resources>
